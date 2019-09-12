@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Urban Housing Density</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+<link rel="stylesheet" type="text/css¨" href='urban-housing.css' />
+<link rel="stylesheet" href="urban-housing.js">
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+		<div id='map'></div>
+
+		<br/>
+
+		<div class='map-overlay' id='features'><h2><strong>Density of Housing Units in US Metro Areas</strong></h2></div>
+		<div class='map-overlay' id='info'><p><strong>979 units/sqmi </strong>is the average density of housing units in the <strong>Atlanta</strong> urban area</p></div>
+		<div class='map-overlay' id='scaler'><img src=scaler.png></img></div>
+
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn"><span><strong>Select a Metro Area</strong></span></button>
+		  <div id="myDropdown" class="dropdown-content">
+		  	<a id="atl" onclick="atlswap()" href="#">Atlanta, GA</a>
+		  	<a id="aust" onclick="austswap()" href="#">Austin, TX</a>
+		  	<a id="balt" onclick="batlswap()" href="#">Baltimore, MD</a>
+		  	<a id="birm" onclick="birmswap()" href="#">Birmingham, AL</a>
+		  	<a id="bost" onclick="bostswap()" href="#">Boston, MA</a>
+		  	<a id="bri" onclick="briswap()" href="#">Bridgeport, CT</a>
+		  	<a id="char" onclick="charswap()" href="#">Charlotte, NC</a>
+		    <a id="chi" onclick="chiswap()" href="#">Chicago, IL</a>
+		    <a id="cincy" onclick="cincyswap()" href="#">Cincinnati, OH</a>
+		    <a id="clev" onclick="clevswap()" href="#">Cleveland, OH</a>
+		    <a id="colu" onclick="coluswap()" href="#">Columbia, SC</a>
+		    <a id="col" onclick="colswap()" href="#">Columbus, OH</a>
+		    <a id="dal" onclick="dalswap()" href="#">Dallas, TX</a>
+		    <a id="den" onclick="denswap()" href="#">Denver, CO</a>
+		    <a id="det" onclick="detswap()" href="#">Detroit, MI</a>
+		    <a id="hart" onclick="hartswap()" href="#">Hartford, CT</a>
+		    <a id="hou" onclick="houswap()" href="#">Houston, TX</a>
+		    <a id="indy" onclick="indyswap()" href="#">Indianapolis, IN</a>
+		    <a id="jax" onclick="jaxswap()" href="#">Jacksonville, FL</a>
+		    <a id="kans" onclick="kansswap()" href="#">Kansas City, MO-KS</a>
+		    <a id="knox" onclick="knoxswap()" href="#">Knoxville, TN</a>
+		    <a id="lv"  onclick="lvswap()" href="#">Las Vegas, NV</a>
+		    <a id="la"  onclick="laswap()" href="#">Los Angeles, CA</a>
+		    <a id="louis"  onclick="louisswap()" href="#">Louisville, KY</a>
+		    <a id="mem"  onclick="memswap()" href="#">Memphis, TN</a>
+		    <a id="mia"  onclick="miaswap()" href="#">Miami, FL</a>
+		    <a id="mil"  onclick="milswap()" href="#">Milwaukee, WI</a>
+		    <a id="min"  onclick="minswap()" href="#">Minneapolis, MN</a>
+		    <a id="nash"  onclick="nashswap()" href="#">Nashville, TN</a>
+		    <a id="nyc" onclick="nycswap()" href="#">New York City, NY</a>
+		    <a id="ok" onclick="okswap()" href="#">Oklahoma City, OK</a>
+		    <a id="orl" onclick="orlswap()" href="#">Orlando, FL</a>
+		    <a id="phi" onclick="phiswap()" href="#">Philadelphia, PA</a>
+		    <a id="pho" onclick="phoswap()" href="#">Phoenix, AZ</a>
+		    <a id="pit" onclick="pitswap()" href="#">Pittsburgh, PA</a>
+		    <a id="port" onclick="portswap()" href="#">Portland, OR</a>
+		    <a id="prov" onclick="provswap()" href="#">Providence, RI</a>
+		    <a id="ral" onclick="ralswap()" href="#">Raleigh, NC</a>
+		    <a id="rich" onclick="richswap()" href="#">Richmond, VA</a>
+		    <a id="riv" onclick="rivswap()" href="#">Riverside, CA</a>
+		    <a id="sac" onclick="sacswap()" href="#">Sacramento, CA</a>
+		    <a id="sa" onclick="saswap()" href="#">San Antonio, TX</a>
+		    <a id="sd" onclick="sdswap()" href="#">San Diego, CA</a>
+		    <a id="sj" onclick="sjswap()" href="#">San Juan, PR</a>
+		    <a id="sea" onclick="seaswap()" href="#">Seattle, WA</a>
+		    <a id="sfbay" onclick="bayswap()" href="#">SF Bay Area, CA</a>
+		    <a id="loui" onclick="louiswap()" href="#">St. Louis, MO</a>
+		    <a id="tamp" onclick="tampswap()" href="#">Tampa, FL</a>
+		    <a id="vb" onclick="vbswap()" href="#">Virginia Beach, VA</a>
+		    <a id="dc" onclick="dcswap()" href="#">Washington D.C.</a>
+		  </div>
+		</div>
+
+<script type='text/javascript' src='urban-housing.js'df></script>
+
+</body>
+</html>

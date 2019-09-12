@@ -1,0 +1,133 @@
+    body { 
+      margin:0; padding:0; 
+    }
+
+	#map { 
+	  position:absolute; top:0; bottom:0; width:100%; 
+	}
+
+    /* Dropdown Button Stuff */
+
+    .dropbtn {
+	  font-family: "Courier New", Courier, monospace;
+	  display: block;
+	  background: rgba(255, 255, 255, 0.8);
+	  color: black;
+	  padding: 10px;
+	  font-size: 16px;
+	  border-width: 1px;
+	  border-color:black;
+	  cursor: pointer;
+	  border-radius: 3px;
+	  min-width: 160px;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #d3d3d3;
+	}
+
+	.dropdown {
+	  margin-right: 20px;
+	  float: right;
+	  position: relative;
+	  display: inline-block;
+	  margin-top: 220px;
+	}
+
+	.dropdown-content {
+	  font-family: "Courier New", Courier, monospace;
+	  display: none;
+	  position: absolute;
+	  background: rgba(255, 255, 255, 0.8);
+	  min-width: 205px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  overflow-y: scroll;
+	  max-height: 375px;
+	}
+
+	.dropdown-content a {
+	  font-family: "Courier New", Courier, monospace;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: #ddd
+	}
+
+	.show {
+	  display:block;
+	}
+
+
+	/*Title and Description*/
+	.map-overlay {
+	  position: absolute;
+	  bottom: 0;
+	  right: 0;
+	  background: rgba(255, 255, 255, 0.9);
+	  margin-right: 20px;
+	  font-family: "Courier New", Courier, monospace;
+	  overflow: auto;
+	  border-radius: 3px;
+	}
+
+	#info {
+	  top: 0;
+	  margin-top: 145px;
+	  width: 300px;
+	  height: 80px;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: rgb(0,0,0);
+	  border-radius: 3px;
+	  display: block;
+	  overflow: hidden;
+	  padding-left: 20px;
+	  padding-right: 10px;
+	}
+
+	#features {
+	  top: 0;
+	  box-shadow: 3px 5px;
+	  height: 110px;
+	  margin-top: 20px;
+	  width: 300px;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: rgb(0,0,0);
+	  border-radius: 3px;
+	  overflow: hidden;
+	  padding-left: 20px;
+	  padding-right: 10px;
+	}
+
+	#scaler{
+	  bottom: 0;
+	  margin-bottom: 25px;
+	  width: 300px;
+	  height: 50px;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: rgb(0,0,0);
+	  border-radius: 3px;
+	  display: block;
+	  overflow: hidden;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	}
+
+	span{
+		 display: block;
+		 pointer-events: none;
+	}
+
+	img{
+		width:300px;
+		height: auto;
+		position: absolute;
+		display: block;
+	}
+
